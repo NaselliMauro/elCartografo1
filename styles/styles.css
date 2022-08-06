@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html{
+	font-size: 62.5%;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+body{
+    background-color: #E8E1D0;
+    font-size: 2rem;
+
+}
+
+.encabezado{
+    grid-area: header;
+    background: rgb(42,74,143);
+    background: linear-gradient(90deg, #2a4a8f 70%, rgba(30,57,116,1) 85%, rgba(19,42,93,1) 100%);
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    
+}
+
+ul{
+    list-style-type: none;
+
+}
+
+.nav_logo{
+    height: 40px;
+    width: 40px;
+}
+
+.nav_header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+}
+
+.nav_encabezado{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+}
+
+.nav_item{
+    padding: 0px 10px;
+    margin: 0px 5px;
+
+}
+
+header ul a{
+    color: #ccb690;
+    font-weight: 600;
+}
+
+a{
+    text-decoration: none;
+}
+
+.mainparallax, .parallax_tienda{
+    grid-area: parallax;
+    background:linear-gradient(rgba(0, 0, 0, 0.651), rgba(0, 0, 0, 0.747)), url(https://i.imgur.com/QmpmCG3.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+
+    text-align: center;
+    color: #142938;
+
+}
+
+.parallax{
+    color: #E8E1D0;
+
+}
+
+.titulo_parallax{
+    font-size: 3rem;
+    padding-top: 20px;
+}
+
+.subtitulo_parallax{
+    font-size: 2rem;
+    font-weight: 300;
+    padding-bottom: 20px;
+}
+
+.frase_parallax{
+    font-size: 1.8rem;
+    font-style: italic;
+    text-align: right;
+    
+    padding: 30px 20px 20px;
+}
+
+.titulo_index{
+    grid-area: titulo;
+    padding: 30px 30px 0px;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 3rem;
+}
+
+.grids_producto{
+    grid-area: catalogo;
+    display: grid;
+    grid-template-columns: 90%;
+    justify-content: center;
+    justify-items: center;
+    padding: 5px;
+    margin: 10px 0px 20px;
+
+}
+
+.producto{
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.producto_img img{
+    max-width: 90%;
+    padding: 10px;
+    background-color: white;
+    border-radius: 25px;
+}
+
+.producto_desc{
+    font-size: 3rem;
+    padding: 20px 0px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+}
+
+.nosotros{
+    grid-area: nosotros;
+    background:linear-gradient(rgba(0, 0, 0, 0.322), rgba(0, 0, 0, 0.514)), url(https://i.imgur.com/VTTDvs1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+}
+
+.nosotros_texto{
+    background-color: rgba(255,255,255, 0.7);
+    background-position: center;
+    text-align: left;
+    padding: 40px;
+    margin: 10px 10px 10px 10px;
+    border-radius: 40px;
+    border-top-style: outset;
+    border-left-style: outset;
+    border-color:   #755e36;
+}
+
+.nosotros_titulo{
+    padding: 10px;
+    text-align: center;
+    
+}
+
+.nosotros_p{
+    padding: 10px;
+    font-size: 2rem;
+}
+
+footer{
+    grid-area: footer;
+    background: rgb(42,74,143);
+    background: linear-gradient(90deg, rgba(42,74,143,1) 70%, rgba(30,57,116,1) 85%, rgba(19,42,93,1) 100%);
+    color: #ccb690;
+    font-weight: 300;
+    padding: 15px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    font-size: medium;
+    
+}
+
+.logo_footer{
+    max-height: 40px;
+    position: relative
+}
+
+.footer_info{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 15px;
+    width: 100%;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.botones_footer, .footer_redes, .footer_newsletter{
+    padding: 10px 30px;
+    text-align: center;
+}
+
+.botones_footer h4{
+    font-size: 2rem;
+}
+
+.botones_footer p{
+    font-size: 2rem;
+}
+
+.footer_redes{
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.footer_redes img{
+    padding: 10px;
+    max-width: 40px;
+    
+}
+
+.footer_newsletter{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer_email{
+    text-align: center;
+}
+
+.footer_email input{
+    height: 25px;
+    width: 200px;
+    text-align: center;
+}
+
+.envoltura{
+    display: grid;
+    grid-template-areas:
+    "header"
+    "parallax"
+    "titulo"
+    "catalogo"
+    "nosotros"
+    "footer" ;
+    grid-template-rows: 1fr;
+}
+
+.mapa_grid{
+    display: grid;
+    grid-template-areas: 
+    "map_t map_t"
+    "mapa_nav map_c"
+    "mapa_nav map_c";
+    grid-template-columns: 30% auto;
+    grid-template-rows: 50px 1fr;
+}
+
+.mapa_titulo{
+    grid-area: map_t;
+    margin: 10px;
+    text-align: center;
+}
+
+.mapa_nav{
+    grid-area: mapa_nav;
+    margin: 20px;
+    padding: 10px;
+    font-size: medium;
+    background-color: #2a4a8f;
+    border-radius: 25px;
+}
+
+.map_type a{
+    color: #ccb690;
+    text-decoration: none;
+}
+
+.map_type{
+    padding: 5px;
+    margin: 15px;
+}
+
+.mapa_catalogo{
+    grid-area: map_c;
+    margin: 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.mapa_producto{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.mapa_img img{
+    max-height: 400px;
+    max-width: 300px;
+}
+
+.mapa_desc{
+    max-width: 300px;
+    font-size: medium;
+    text-align: center;
+}

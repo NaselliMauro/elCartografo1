@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+<body>
+    
+</body>
+    <header class=encabezado>
+        <a href="../index.html">
+            <img src="../images/icons8-rosa-de-los-vientos-80.png" alt="Logo de El Cartógrafo">
+        </a>
+        <nav class="nav_header">
+            <ul class="nav_encabezado">
+                <li class="nav_item">
+                    <a href="../index.html">Inicio</a>
+                </li>
+                <li class="nav_item">
+                    <a href="mapas.html">Mapas</a>
+                </li>
+                <li class="nav_item">
+                        <a href="libreria.html">Libreria</a>
+                </li>
+                <li class="nav_item">
+                    <a href="accesorios.html">Accesorios</a>
+                </li>
+                <li class="nav_item">
+                    <a href="contacto.html">Contacto</a>
+                </li>
+            </ul>   
+        </nav>
+    </header>
+    
+    <main class="parallaxtienda">
+        <div class="parallax">
+            <h1 class="titulo_parallax">Dejanos tu Consulta</h1>
+        </div>
+    </main>
+
+    <section class="grid_consulta">
+		<article class="formulario">
+			<form action="#" class="formulario_flex">
+                <div class="formulario_nombre">
+                    <label for="nombre">Tu Nombre </label> <br>
+                        <input type="text" placeholder= "Tu nombre" name="nombre">
+                    </label>
+                </div>
+                <div class="formulario_email">
+                    <label for="email">Email:<br>
+                        <input type="email" placeholder="Tu email" name="email"><br>
+                    </label>
+                </div>
+                <div class="formulario_motivo">
+                    <div> Motivo de Consulta </div>
+				    <select name="Motivos" id="Motivos">
+				    	<option value="Ventasxmayor">Ventas al por mayor</option>
+					    <option value="Entregas">Problemas en la entrega</option>
+					    <option value="MediosPago">Medios de pago</option>
+                        <option value="Otros">Otros</option>
+                    </select> <br>
+                </div>  
+                <div class="formulario_consulta">              
+                    <label for="Observaciones"> Consulta:<br>
+                        <textarea style="width: 300px; height: 175px;"></textarea>
+                    </label>
+                </div>
+				<div class="formulario_noticias"> 
+                    <div>¿Queres recibir noticias sobre nuestros productos?</div> 
+                    <input type="checkbox" name="acepta" value="1"> <br>
+                </div>
+                <div class="botones">
+                    <div class="boton_enviar">
+                        <input type="submit" value="Enviar">
+                    </div>
+                    <div class="boton_reset">
+                        <input type="reset" value="Reiniciar">
+                    </div>
+				</div>
+			</form>
+		</article>
+        <section class="ubicacion">
+            <div class="ubicacion_titulo">Nuestra Ubicación</div>
+            <iframe class="ubicacion_mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5522.735127412746!2d-58.37036184633423!3d-34.608258934197295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a3352c91d030d1%3A0x6f2f1b79e97ef7e0!2sMuseo%20del%20Bicentenario!5e0!3m2!1ses-419!2sar!4v1658025475042!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+    </section>
+    <footer>
+        <div class="logo_footer">
+            <a href="../index.html">
+                <img src="../images/icons8-rosa-de-los-vientos-40.png" alt="Logo de El Cartógrafo">
+            </a>
+        </div>
+        <div class="footer_info">
+            <div class=botones_footer>
+                <h4>Información de Contacto</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, maxime. At ipsam, reprehenderit, delectus, similique quo voluptate eligendi earum nostrum quas magni accusantium eos beatae in ad nisi dolores. Corporis.</p>
+            </div>
+            <div class=footer_redes>
+                <a href="https://www.facebook.com">
+                    <img src="../images/facebook.png" alt="Logo Facebook">
+                </a>
+                <a href="https://www.twitter.com">
+                    <img src="../images/twitter.png" alt="Logo Twitter">
+                </a>
+                <a href="https://www.instagram.com">
+                    <img src="../images/instagram.png" alt="Logo Instagram">
+                </a>
+            </div>
+            <div class=footer_newsletter>
+                <h4>Suscripción al Newsletter</h4>
+                <div class="footer_email">
+                    <label for="email">Email:<br>
+                        <input type="email" placeholder="Tu email" name="email"><br>
+                    </label>
+                </div>
+        </div>
+    </footer>
+</html>
